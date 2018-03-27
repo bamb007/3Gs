@@ -2,5 +2,12 @@
 	"FileVersion": 3,
 	"EngineAssociation": "4.19",
 	"Category": "",
-	"Description": ""
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UN4SchoolProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }
