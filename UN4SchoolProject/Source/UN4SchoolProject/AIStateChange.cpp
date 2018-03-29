@@ -21,6 +21,7 @@ void UAIStateChange::BeginPlay()
 
 	chase = true;
 	soundPlay = false;
+	power = false;
 	stateChange = 0;
 	// ...
 }
@@ -36,8 +37,9 @@ void UAIStateChange::TickComponent(float DeltaTime, ELevelTick TickType, FActorC
 
 void UAIStateChange::ChangeStateInAI()
 {
-	if (stateChange == 0)
+	if (stateChange == 0 && power == true)
 	{
+		power = false;
 		stateChange = 1;
 	}
 	

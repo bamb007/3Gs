@@ -22,6 +22,8 @@ public:
 		bool chase;
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "StateChange")
 		bool soundPlay;
+	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "StateChange")
+		bool power;
 
 protected:
 	// Called when the game starts
